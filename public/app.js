@@ -22,7 +22,7 @@ btn.addEventListener("click", calculate);
   if (e.key === "Enter") calculate();
 }));
 // ===== 문의 양식 + 테이블 =====
-const API_BASE = ""; // 같은 서버(3000)에서 서빙하므로 빈 값이면 됨
+const API_BASE = "https://git-test1-jtif.onrender.com";
 
 const form = document.getElementById("contactForm");
 const nameEl = document.getElementById("contactName");
