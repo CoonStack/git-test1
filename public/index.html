@@ -21,7 +21,37 @@
       <p class="result">
         결과: <strong id="sum">0</strong>
       </p>
+      
     </main>
+    <hr style="margin: 32px 0; opacity: 0.2;" />
+
+<section class="card">
+  <h2>문의하기</h2>
+
+  <form id="contactForm" class="form">
+    <input id="contactName" type="text" placeholder="이름" required />
+    <input id="contactEmail" type="email" placeholder="이메일" required />
+    <textarea id="contactMessage" placeholder="문의 내용" rows="4" required></textarea>
+    <button type="submit">제출</button>
+    <p id="contactStatus" style="margin: 10px 0 0; font-size: 14px;"></p>
+  </form>
+
+  <h3 style="margin-top: 24px;">누적 문의</h3>
+  <div style="overflow:auto;">
+    <table class="table" id="contactTable">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>이름</th>
+          <th>이메일</th>
+          <th>문의 내용</th>
+          <th>작성일</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+</section>
 
     <script src="./app.js"></script>
   </body>
